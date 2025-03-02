@@ -8,5 +8,7 @@ class UserMailerTest < ActionMailer::TestCase
     assert_equal ["from@example.com"], email.from
     assert_equal ["to@example.com"], email.to
     assert_equal "Welcome", email.subject
+
+    assert_mailer_fixtures("welcome", email)
   end
 end

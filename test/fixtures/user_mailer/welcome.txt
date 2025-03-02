@@ -1,0 +1,9 @@
+Application Name
+
+We are excited to have you join us! Thank you for signing up.
+
+Click here to sign in: https://example.com
+
+
+Best Regards,
+Company Name
