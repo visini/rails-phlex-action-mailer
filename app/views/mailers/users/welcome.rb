@@ -7,7 +7,7 @@ class Views::Mailers::Users::Welcome < Views::Base
 
   class Html < self
     def view_template
-      div do
+      div class: "highlight" do
         plain "We are excited to have you join us! Thank you for signing up."
       end
 

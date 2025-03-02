@@ -18,7 +18,7 @@ module ActiveSupport
       expected_html = read_fixture("#{name}.html").join.strip
       expected_text = read_fixture("#{name}.txt").join.strip
       fixture_html = Nokogiri::HTML.parse(expected_html).to_html.strip
-      email_html = Nokogiri::HTML.parse(email_body_html).to_html.strip
+      email_html = Nokogiri::HTML.parse(email_body_html).tap { |doc| doc.xpath("//style|//@class|//@style").remove }.to_html.strip
       assert_dom_equal fixture_html, email_html
       assert_equal expected_text, email_body_text
     end

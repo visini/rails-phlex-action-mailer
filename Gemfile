@@ -62,3 +62,4 @@ group :test do
 end
 
 gem "phlex-rails"
+gem "roadie-rails"
