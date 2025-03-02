@@ -1,3 +1,1 @@
-We are excited to have you join us! Thank you for signing up.
-
-Click here to sign in: https://example.com
+<%= render Views::Mailers::Users::Welcome::Text.new(user: @user) %>

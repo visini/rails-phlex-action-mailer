@@ -1,3 +1,1 @@
-<div>We are excited to have you join us! Thank you for signing up.</div>
-
-<%= link_to 'Click here to sign in', 'https://example.com' %>
+<%= render Views::Mailers::Users::Welcome::Html.new(user: @user) %>
