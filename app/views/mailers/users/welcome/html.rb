@@ -1,6 +1,14 @@
 class Views::Mailers::Users::Welcome::Html < Views::Base
+  include Components
+
   def initialize(user)
     @user = user
+  end
+
+  def around_template
+    render Components::Layouts::Mailers::Html.new do
+      super
+    end
   end
 
   def view_template
