@@ -188,6 +188,10 @@ GEM
     parser (3.3.7.1)
       ast (~> 2.4.1)
       racc
+    phlex (2.0.2)
+    phlex-rails (2.0.2)
+      phlex (~> 2.0.2)
+      railties (>= 6.1, < 9)
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -367,6 +371,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
+  phlex-rails
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.1)
